@@ -75,11 +75,9 @@ def main():
                             print("Total players: ", len(selected_team))
                             print("\nPlayers on Team:")
                             print(', '.join(name_list))
-                            continue_option = input("\nPress ENTER to return to Main Menu ")
-                            if continue_option == '':
+                            continue_option = input("\nPress any key to return to Main Menu ")
+                            if continue_option is not None:
                                 main()
-                            else:
-                                print("Thank you, come again!\n")
             elif menu_option == 2:
                 print("Thank you, come again!\n")
                 sys.exit()
